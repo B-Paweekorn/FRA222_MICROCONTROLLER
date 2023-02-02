@@ -1,0 +1,710 @@
+23:17:34 **** Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411ceux.d" -MT"Core/Startup/startup_stm32f411ceux.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411ceux.o" "../Core/Startup/startup_stm32f411ceux.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5684	     20	   1572	   7276	   1c6c	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:17:43 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:93:3: error: 'State' undeclared (first use in this function)
+   93 |   State = HAL_GPIO_ReadPin(GPIOA, GPIO_15);
+      |   ^~~~~
+../Core/Src/main.c:93:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:93:35: error: 'GPIO_15' undeclared (first use in this function); did you mean 'GPIOD'?
+   93 |   State = HAL_GPIO_ReadPin(GPIOA, GPIO_15);
+      |                                   ^~~~~~~
+      |                                   GPIOD
+../Core/Src/main.c:99:29: error: 'GPIO_13' undeclared (first use in this function); did you mean 'GPIOD'?
+   99 |    HAL_GPIO_WritePin(GPIOC, GPIO_13, State);
+      |                             ^~~~~~~
+      |                             GPIOD
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:18:54 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:93:3: error: 'State' undeclared (first use in this function)
+   93 |   State = HAL_GPIO_ReadPin(GPIOA, GPIO_0);
+      |   ^~~~~
+../Core/Src/main.c:93:3: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:93:35: error: 'GPIO_0' undeclared (first use in this function); did you mean 'GPIOD'?
+   93 |   State = HAL_GPIO_ReadPin(GPIOA, GPIO_0);
+      |                                   ^~~~~~
+      |                                   GPIOD
+../Core/Src/main.c:99:29: error: 'GPIO_13' undeclared (first use in this function); did you mean 'GPIOD'?
+   99 |    HAL_GPIO_WritePin(GPIOC, GPIO_13, State);
+      |                             ^~~~~~~
+      |                             GPIOD
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:19:25 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:93:3: error: 'State' undeclared (first use in this function)
+   93 |   State = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_0);
+      |   ^~~~~
+../Core/Src/main.c:93:3: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:20:52 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5768	     20	   1572	   7360	   1cc0	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:21:15 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5768	     20	   1572	   7360	   1cc0	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:28:25 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:15: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  101 |    if(Current == 1 & Last == 0)
+      |       ~~~~~~~~^~~~
+../Core/Src/main.c:94:17: warning: unused variable 'State' [-Wunused-variable]
+   94 |   GPIO_PinState State = 0;
+      |                 ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:109:1: error: expected identifier or '(' before '}' token
+  109 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:28:35 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:15: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  100 |    if(Current == 1 & Last == 0)
+      |       ~~~~~~~~^~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:108:1: error: expected identifier or '(' before '}' token
+  108 | }
+      | ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+23:28:55 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:100:15: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+  100 |    if(Current == 1 & Last == 0)
+      |       ~~~~~~~~^~~~
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5852	     20	   1572	   7444	   1d14	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:30:24 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5836	     20	   1572	   7428	   1d04	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:33:06 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5836	     20	   1572	   7428	   1d04	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:39:34 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:20: warning: comparison between pointer and integer
+  102 |    if (HAL_GetTick > timestamp)
+      |                    ^
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:41:11 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:20: warning: comparison between pointer and integer
+  102 |    if (HAL_GetTick > timestamp)
+      |                    ^
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:41:44 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+23:42:03 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+23:42:43 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+23:43:57 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:20: warning: comparison between pointer and integer
+  102 |    if (HAL_GetTick > timestamp)
+      |                    ^
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:44:14 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5864	     20	   1572	   7456	   1d20	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+23:48:47 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:20: warning: comparison between pointer and integer
+  102 |    if (HAL_GetTick > timestamp)
+      |                    ^
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5860	     20	   1572	   7452	   1d1c	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+23:50:04 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:102:20: warning: comparison between pointer and integer
+  102 |    if (HAL_GetTick > timestamp)
+      |                    ^
+arm-none-eabi-gcc -o "F411CEU6_BlinkLED.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_BlinkLED\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_BlinkLED.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_BlinkLED.elf
+ 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_BlinkLED.elf  > "F411CEU6_BlinkLED.list"
+   text	   data	    bss	    dec	    hex	filename
+   5860	     20	   1572	   7452	   1d1c	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_BlinkLED.list
+ 
+13:45:53 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5860	     20	   1572	   7452	   1d1c	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+13:46:12 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5860	     20	   1572	   7452	   1d1c	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+01:25:24 **** Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.d" -MT"Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m4 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f411ceux.d" -MT"Core/Startup/startup_stm32f411ceux.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Startup/startup_stm32f411ceux.o" "../Core/Startup/startup_stm32f411ceux.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f4xx.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/system_stm32f4xx.d" -MT"Core/Src/system_stm32f4xx.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/system_stm32f4xx.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  10716	     20	   1740	  12476	   30bc	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:25:37 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:28:59 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+01:34:26 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:36:35 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:38:08 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:39:46 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:42:04 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:42:46 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:43:35 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:45:05 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:45:23 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+01:46:35 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:47:33 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+01:47:40 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+01:58:41 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+   9388	     20	   1644	  11052	   2b2c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:21:27 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_it.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_it.d" -MT"Core/Src/stm32f4xx_it.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_it.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11164	     20	   1740	  12924	   327c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:23:18 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11196	     20	   1740	  12956	   329c	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:24:37 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11188	     20	   1740	  12948	   3294	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:26:47 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11208	     20	   1740	  12968	   32a8	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:29:53 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:98:12: warning: unused variable 'i' [-Wunused-variable]
+   98 |   uint32_t i;
+      |            ^
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11168	     20	   1740	  12928	   3280	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:38:56 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:20: warning: comparison between pointer and integer
+  106 |    if (HAL_GetTick > timestamp)
+      |                    ^
+../Core/Src/main.c:109:13: error: called object is not a function or function pointer
+  109 |        i += 1
+      |             ^
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+02:39:07 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:106:20: warning: comparison between pointer and integer
+  106 |    if (HAL_GetTick > timestamp)
+      |                    ^
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11212	     20	   1740	  12972	   32ac	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:40:21 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:12: warning: unused variable 'i' [-Wunused-variable]
+   99 |   uint32_t i = 0;
+      |            ^
+../Core/Src/main.c:98:12: warning: unused variable 'timestamp' [-Wunused-variable]
+   98 |   uint32_t timestamp = 0;
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11176	     20	   1740	  12936	   3288	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:41:06 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:12: warning: unused variable 'i' [-Wunused-variable]
+   99 |   uint32_t i = 0;
+      |            ^
+../Core/Src/main.c:98:12: warning: unused variable 'timestamp' [-Wunused-variable]
+   98 |   uint32_t timestamp = 0;
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11176	     20	   1740	  12936	   3288	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+02:41:51 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:12: warning: unused variable 'i' [-Wunused-variable]
+   99 |   uint32_t i = 0;
+      |            ^
+../Core/Src/main.c:98:12: warning: unused variable 'timestamp' [-Wunused-variable]
+   98 |   uint32_t timestamp = 0;
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11176	     20	   1740	  12936	   3288	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 

@@ -1,0 +1,24 @@
+02:41:51 **** Incremental Build of configuration Debug for project F411CEU6_PWM ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:99:12: warning: unused variable 'i' [-Wunused-variable]
+   99 |   uint32_t i = 0;
+      |            ^
+../Core/Src/main.c:98:12: warning: unused variable 'timestamp' [-Wunused-variable]
+   98 |   uint32_t timestamp = 0;
+      |            ^~~~~~~~~
+arm-none-eabi-gcc -o "F411CEU6_PWM.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\stm32_F411CEU6_vact\F411CEU6_PWM\STM32F411CEUX_FLASH.ld" --specs=nosys.specs -Wl,-Map="F411CEU6_PWM.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: F411CEU6_PWM.elf
+ 
+arm-none-eabi-size   F411CEU6_PWM.elf 
+arm-none-eabi-objdump -h -S  F411CEU6_PWM.elf  > "F411CEU6_PWM.list"
+   text	   data	    bss	    dec	    hex	filename
+  11176	     20	   1740	  12936	   3288	F411CEU6_PWM.elf
+Finished building: default.size.stdout
+ 
+Finished building: F411CEU6_PWM.list
+ 
+
+02:41:52 Build Finished. 0 errors, 2 warnings. (took 735ms)
+

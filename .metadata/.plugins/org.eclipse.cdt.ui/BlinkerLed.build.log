@@ -1,4 +1,4 @@
-12:06:00 **** Incremental Build of configuration Debug for project BlinkerLed ****
+22:48:53 **** Build of configuration Debug for project BlinkerLed ****
 make -j16 all 
 arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
 arm-none-eabi-gcc -o "BlinkerLed.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\BlinkerLed\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlinkerLed.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
@@ -7,11 +7,11 @@ Finished building target: BlinkerLed.elf
 arm-none-eabi-size   BlinkerLed.elf 
 arm-none-eabi-objdump -h -S  BlinkerLed.elf  > "BlinkerLed.list"
    text	   data	    bss	    dec	    hex	filename
-   7788	     20	   1636	   9444	   24e4	BlinkerLed.elf
+   7828	     20	   1636	   9484	   250c	BlinkerLed.elf
 Finished building: default.size.stdout
  
 Finished building: BlinkerLed.list
  
 
-12:06:01 Build Finished. 0 errors, 0 warnings. (took 882ms)
+22:48:56 Build Finished. 0 errors, 0 warnings. (took 2s.841ms)
 

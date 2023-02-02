@@ -1,0 +1,10 @@
+13:46:12 **** Incremental Build of configuration Debug for project F411CEU6_BlinkLED ****
+make -j16 all 
+arm-none-eabi-size   F411CEU6_BlinkLED.elf 
+   text	   data	    bss	    dec	    hex	filename
+   5860	     20	   1572	   7452	   1d1c	F411CEU6_BlinkLED.elf
+Finished building: default.size.stdout
+ 
+
+13:46:12 Build Finished. 0 errors, 0 warnings. (took 220ms)
+
