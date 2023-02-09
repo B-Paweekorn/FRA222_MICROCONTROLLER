@@ -1,0 +1,10 @@
+12:20:06 **** Incremental Build of configuration Debug for project AnologToDigitalConverter ****
+make -j16 all 
+arm-none-eabi-size   AnologToDigitalConverter.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10156	     20	   1772	  11948	   2eac	AnologToDigitalConverter.elf
+Finished building: default.size.stdout
+ 
+
+12:20:06 Build Finished. 0 errors, 0 warnings. (took 233ms)
+
