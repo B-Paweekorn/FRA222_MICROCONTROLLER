@@ -1,0 +1,16 @@
+01:20:53 **** Incremental Build of configuration Debug for project INPUT_CAPTURE ****
+make -j16 all 
+arm-none-eabi-gcc -o "INPUT_CAPTURE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\INPUT_CAPTURE\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="INPUT_CAPTURE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: INPUT_CAPTURE.elf
+ 
+arm-none-eabi-size   INPUT_CAPTURE.elf 
+arm-none-eabi-objdump -h -S  INPUT_CAPTURE.elf  > "INPUT_CAPTURE.list"
+   text	   data	    bss	    dec	    hex	filename
+  16464	     20	   1892	  18376	   47c8	INPUT_CAPTURE.elf
+Finished building: default.size.stdout
+ 
+Finished building: INPUT_CAPTURE.list
+ 
+
+01:20:54 Build Finished. 0 errors, 0 warnings. (took 1s.187ms)
+

@@ -1,0 +1,10 @@
+21:18:16 **** Incremental Build of configuration Debug for project INTERRUPT_DMA ****
+make -j16 all 
+arm-none-eabi-size   INTERRUPT_DMA.elf 
+   text	   data	    bss	    dec	    hex	filename
+  15364	     20	   1868	  17252	   4364	INTERRUPT_DMA.elf
+Finished building: default.size.stdout
+ 
+
+21:18:16 Build Finished. 0 errors, 0 warnings. (took 242ms)
+

@@ -1,5 +1,15 @@
-ButtonMatrix
 Disp
 LastVal
 adcRawData
 ADCConvert
+Temp
+Voltage
+ADCBuffer
+micros
+counter
+InputCaptureBuffer
+dt
+duty
+Speed
+sumdiff
+averageRisingedgePeriod
