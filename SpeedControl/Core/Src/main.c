@@ -45,12 +45,14 @@ DMA_HandleTypeDef hdma_tim2_ch1;
 
 /* USER CODE BEGIN PV */
 uint32_t InputCaptureBuffer[IC_BUFFER_SIZE];
-double dt;
-double Speed;
-uint8_t kp = 5;
+float dt;
+float error;
+float Speed;
 uint32_t sumdiff;
 uint16_t MotorSetRPM;
+uint16_t L_MotorSetRPM;
 uint32_t duty = 50;
+GPIO_PinState set;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -121,7 +123,12 @@ HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
 		  if (dt > 0){
 			  Speed = (60.0*1000000.0)/(12.0*dt*64.0);
 		  }
-		  Controller();
+		  if (set == 0){
+			  __HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+		  }
+		  else if (set == 1){
+			  Controller();
+		  }
 	  }
     /* USER CODE END WHILE */
 
@@ -362,9 +369,28 @@ float ReadEncoder()
 }
 
 void Controller(){
-	//duty = (99.0*MotorSetRPM)/22.0;
-	duty = 0.1695*(MotorSetRPM * MotorSetRPM) - 0.2876*(MotorSetRPM) + 21.895;
-	__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+	if (L_MotorSetRPM != MotorSetRPM)
+	{
+		duty = 0.0927*(MotorSetRPM * MotorSetRPM) + 1.2244*(MotorSetRPM) + 6.806;
+		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+	}
+	else if (L_MotorSetRPM == MotorSetRPM)
+	{
+		if (MotorSetRPM == 0){
+			duty = 0;
+		}
+		else{
+			error = MotorSetRPM - Speed;
+			if (error > 0){
+				duty += 1;
+			}
+			else if (error < 0){
+				duty -= 1;
+			}
+		}
+		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
+	}
+	L_MotorSetRPM = MotorSetRPM;
 }
 /* USER CODE END 4 */
 

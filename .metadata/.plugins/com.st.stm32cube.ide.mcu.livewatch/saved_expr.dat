@@ -12,4 +12,8 @@ dt
 duty
 Speed
 sumdiff
-averageRisingedgePeriod
+MotorSetRPM
+kp
+QEIReadRaw
+angle
+QEIData
