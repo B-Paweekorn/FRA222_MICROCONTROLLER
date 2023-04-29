@@ -104,14 +104,14 @@ HAL_TIM_IC_Start_DMA(&htim2, TIM_CHANNEL_1, InputCaptureBuffer, IC_BUFFER_SIZE);
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
 	  static uint32_t timestamp = 0;
 	  if (HAL_GetTick() >= timestamp){
 		  timestamp = HAL_GetTick() + 500;
 		  averageRisingedgePeriod = IC_Calc_Period();
 	  }
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }

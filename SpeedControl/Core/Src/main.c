@@ -49,9 +49,9 @@ float dt;
 float error;
 float Speed;
 uint32_t sumdiff;
-uint16_t MotorSetRPM;
-uint16_t L_MotorSetRPM;
-uint32_t duty = 50;
+uint8_t MotorSetRPM;
+uint8_t L_MotorSetRPM;
+uint8_t duty = 50;
 GPIO_PinState set;
 /* USER CODE END PV */
 
@@ -86,7 +86,7 @@ int main(void)
   /* MCU Configuration--------------------------------------------------------*/
 
   /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
+    HAL_Init();
 
   /* USER CODE BEGIN Init */
 
@@ -387,6 +387,13 @@ void Controller(){
 			else if (error < 0){
 				duty -= 1;
 			}
+		}
+		if (duty >= 99){
+			duty = 99;
+		}
+		else if (duty <= 1)
+		{
+			duty = 1;
 		}
 		__HAL_TIM_SET_COMPARE(&htim1, TIM_CHANNEL_1, duty);
 	}

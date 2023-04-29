@@ -1,10 +1,10 @@
-15:29:36 **** Incremental Build of configuration Debug for project SpeedControl ****
+10:21:12 **** Incremental Build of configuration Debug for project SpeedControl ****
 make -j16 all 
 arm-none-eabi-size   SpeedControl.elf 
    text	   data	    bss	    dec	    hex	filename
-  17280	     24	   1920	  19224	   4b18	SpeedControl.elf
+  17312	     24	   1912	  19248	   4b30	SpeedControl.elf
 Finished building: default.size.stdout
  
 
-15:29:36 Build Finished. 0 errors, 0 warnings. (took 227ms)
+10:21:12 Build Finished. 0 errors, 0 warnings. (took 255ms)
 
