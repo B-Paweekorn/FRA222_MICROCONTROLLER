@@ -1,0 +1,36 @@
+23:53:24 **** Incremental Build of configuration Debug for project simulink_to_F411RE ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:111:31: warning: pointer targets in passing argument 2 of 'HAL_UART_Receive_DMA' differ in signedness [-Wpointer-sign]
+  111 |  HAL_UART_Receive_DMA(&huart2,RxBuffer, 64);
+      |                               ^~~~~~~~
+      |                               |
+      |                               int8_t * {aka signed char *}
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:406,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:727:76: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'int8_t *' {aka 'signed char *'}
+  727 | HAL_StatusTypeDef HAL_UART_Receive_DMA(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size);
+      |                                                                   ~~~~~~~~~^~~~~
+arm-none-eabi-gcc -o "simulink_to_F411RE.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA233_CONTROLENGINEER\SYSTEM_IDENT\Lab1\simulink_to_F411RE\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="simulink_to_F411RE.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: simulink_to_F411RE.elf
+ 
+arm-none-eabi-size   simulink_to_F411RE.elf 
+arm-none-eabi-objdump -h -S  simulink_to_F411RE.elf  > "simulink_to_F411RE.list"
+   text	   data	    bss	    dec	    hex	filename
+  19952	     28	   2028	  22008	   55f8	simulink_to_F411RE.elf
+arm-none-eabi-objcopy  -O ihex  simulink_to_F411RE.elf  "simulink_to_F411RE.hex"
+Finished building: default.size.stdout
+arm-none-eabi-objcopy  -O binary  simulink_to_F411RE.elf  "simulink_to_F411RE.bin"
+ 
+Finished building: simulink_to_F411RE.hex
+ 
+Finished building: simulink_to_F411RE.bin
+ 
+Finished building: simulink_to_F411RE.list
+ 
+
+23:53:25 Build Finished. 0 errors, 1 warnings. (took 1s.172ms)
+
