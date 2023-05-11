@@ -1,0 +1,37 @@
+11:01:50 **** Incremental Build of configuration Debug for project SPI ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:96:1: warning: implicit declaration of function 'SPITxRx_Setup' [-Wimplicit-function-declaration]
+   96 | SPITxRx_Setup();
+      | ^~~~~~~~~~~~~
+../Core/Src/main.c:103:4: warning: implicit declaration of function 'SPITxRx_readIO' [-Wimplicit-function-declaration]
+  103 |    SPITxRx_readIO();
+      |    ^~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:273:6: warning: conflicting types for 'SPITxRx_Setup'
+  273 | void SPITxRx_Setup(){
+      |      ^~~~~~~~~~~~~
+../Core/Src/main.c:96:1: note: previous implicit declaration of 'SPITxRx_Setup' was here
+   96 | SPITxRx_Setup();
+      | ^~~~~~~~~~~~~
+../Core/Src/main.c:281:6: warning: conflicting types for 'SPITxRx_readIO'
+  281 | void SPITxRx_readIO(){
+      |      ^~~~~~~~~~~~~~
+../Core/Src/main.c:103:4: note: previous implicit declaration of 'SPITxRx_readIO' was here
+  103 |    SPITxRx_readIO();
+      |    ^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "SPI.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\SPI\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SPI.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SPI.elf
+ 
+arm-none-eabi-size   SPI.elf 
+arm-none-eabi-objdump -h -S  SPI.elf  > "SPI.list"
+   text	   data	    bss	    dec	    hex	filename
+  10644	     20	   1748	  12412	   307c	SPI.elf
+Finished building: default.size.stdout
+ 
+Finished building: SPI.list
+ 
+
+11:01:51 Build Finished. 0 errors, 4 warnings. (took 989ms)
+

@@ -14,3 +14,6 @@ eepromExampleReadFlag
 hi2c1
 RxBuffer
 TxBuffer
+Mode
+freq
+status

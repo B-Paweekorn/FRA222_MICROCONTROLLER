@@ -8082,3 +8082,444 @@ Reason: (0) Unknown. Please check power and cabling to target.
 !SUBENTRY 2 com.st.stm32cube.ide.mcu.debug.stlink 4 0 2023-05-10 17:27:09.092
 !MESSAGE Error in initializing ST-LINK device.
 Reason: (0) Unknown. Please check power and cabling to target.
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-05-10 18:07:26.454
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:160)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:649)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getAdapter(GdbLaunch.java:454)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.disconnect(GdbLaunch.java:338)
+	at org.eclipse.debug.internal.core.commands.DisconnectCommand.execute(DisconnectCommand.java:35)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:36)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-05-10 18:07:26.884
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2023-05-10 23:03:04.690 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=th_TH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-10 23:03:17.322
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-10 23:03:17.391
+!MESSAGE Log4j initialized with config file C:\FRA222_MICROCONTROLLER\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-10 23:03:29.592
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:32:51.410
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:32:51.457
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:34:55.314
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:34:55.354
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:35:20.488
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:35:20.525
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:35:55.081
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:35:55.121
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:37:02.628
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:37:02.667
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.core 4 0 2023-05-10 23:38:35.020
+!MESSAGE ll
+
+!ENTRY org.eclipse.remote.core 4 0 2023-05-10 23:38:35.788
+!MESSAGE ll
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:38:42.909
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:38:42.949
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:43:27.568
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:43:27.604
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.stlink 4 4 2023-05-10 23:53:02.737
+!MESSAGE ST-LINK GDB server failed to start (exit code = 0)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2023-05-10 23:53:02.760
+!MESSAGE Error in final launch sequence:
+
+Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to start GDB server
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:328)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:803)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1021)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$2.run(DebugUIPlugin.java:1224)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1691)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:194)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:95)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:197)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2023-05-10 23:53:02.761
+!MESSAGE Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1691)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:194)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:95)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:197)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:102)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.debug.stlink 4 0 2023-05-10 23:53:02.761
+!MESSAGE Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:55:14.954
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:55:14.990
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:55:57.678
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:55:57.714
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:56:04.031
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:56:04.068
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:56:12.161
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.remote.console 4 0 2023-05-10 23:56:12.197
+!MESSAGE Error opening \\.\COM3 (5)
+!STACK 0
+java.io.IOException: Error opening \\.\COM3 (5)
+	at org.eclipse.cdt.serial.SerialPort.open0(Native Method)
+	at org.eclipse.cdt.serial.SerialPort.open(SerialPort.java:316)
+	at org.eclipse.remote.serial.core.SerialPortCommandShell.<init>(SerialPortCommandShell.java:34)
+	at org.eclipse.remote.serial.core.SerialPortConnection.getCommandShell(SerialPortConnection.java:97)
+	at org.eclipse.remote.internal.console.TerminalConsoleConnector$1.run(TerminalConsoleConnector.java:140)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2023-05-11 02:11:09.760 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=th_TH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-11 02:11:18.454
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-11 02:11:18.525
+!MESSAGE Log4j initialized with config file C:\FRA222_MICROCONTROLLER\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-11 02:11:26.810
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-05-11 02:52:24.921
+!MESSAGE An internal error occurred during: "Execute Debug Command".
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: assertion failed: The application has not been initialized.
+	at org.eclipse.core.runtime.Assert.isTrue(Assert.java:113)
+	at org.eclipse.core.internal.runtime.InternalPlatform.assertInitialized(InternalPlatform.java:139)
+	at org.eclipse.core.internal.runtime.InternalPlatform.getAdapterManager(InternalPlatform.java:160)
+	at org.eclipse.core.runtime.Platform.getAdapterManager(Platform.java:649)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.getAdapter(GdbLaunch.java:454)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunch.disconnect(GdbLaunch.java:338)
+	at org.eclipse.debug.internal.core.commands.DisconnectCommand.execute(DisconnectCommand.java:35)
+	at org.eclipse.debug.internal.core.commands.ForEachCommand.doExecute(ForEachCommand.java:36)
+	at org.eclipse.debug.core.commands.AbstractDebugCommand$1.run(AbstractDebugCommand.java:215)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.debug.core 4 2 2023-05-11 02:52:24.926
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.dsf.debug.model.DsfLaunch.fireTerminate(DsfLaunch.java:47)
+	at org.eclipse.debug.core.Launch.handleDebugEvents(Launch.java:644)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1214)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-05-11 02:52:24.927
+!MESSAGE An internal error occurred during: "Debug Event Dispatch".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.debug.core.DebugPlugin.log(DebugPlugin.java:1056)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.handleException(DebugPlugin.java:1200)
+	at org.eclipse.core.runtime.SafeRunner.handleException(SafeRunner.java:83)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1248)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:480)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.jobs 2 2 2023-05-11 02:52:25.284
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2023-05-11 09:47:28.563 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=th_TH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-11 09:47:39.479
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-11 09:47:39.544
+!MESSAGE Log4j initialized with config file C:\FRA222_MICROCONTROLLER\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-11 09:47:50.194
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-05-11 09:48:52.738
+!MESSAGE Indexed 'SPI' (22 sources, 82 headers) in 2.94 sec: 4,741 declarations; 22,751 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
+!SESSION 2023-05-11 17:53:00.384 -----------------------------------------------
+eclipse.buildId=Version 1.11.0
+java.version=11.0.16
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=th_TH
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2023-05-11 17:53:15.053
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-05-11 17:53:15.131
+!MESSAGE Log4j initialized with config file C:\FRA222_MICROCONTROLLER\.metadata\.log4j.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-05-11 17:53:28.762
+!MESSAGE Started RMI Server, listening on port 41337

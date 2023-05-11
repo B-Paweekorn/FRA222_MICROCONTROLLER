@@ -55,9 +55,10 @@ static void MX_GPIO_Init(void);
 static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
 /* USER CODE BEGIN PFP */
-void UARTPollingMethod();
+//void UARTPollingMethod();
 void DummyTask();
-void UARTInterruptConfig();
+//void UARTInterruptConfig();
+void UARTDMAConfig();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -98,7 +99,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 uint8_t text[] = "HELLO FIBO";
 HAL_UART_Transmit(&huart2, text,11, 10); //polling
-//UARTDMAConfig();
+UARTDMAConfig();
 //UARTInterruptConfig();
   /* USER CODE END 2 */
 
@@ -106,7 +107,7 @@ HAL_UART_Transmit(&huart2, text,11, 10); //polling
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  UARTPollingMethod();
+//	  UARTPollingMethod();
 	  DummyTask();
     /* USER CODE END WHILE */
 
