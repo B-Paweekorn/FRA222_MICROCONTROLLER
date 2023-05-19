@@ -1,0 +1,57 @@
+/*
+ * kalman.h
+ *
+ *  Created on: May 16, 2023
+ *      Author: pawee
+ */
+
+#ifndef INC_KALMAN_H_
+#define INC_KALMAN_H_
+
+#include "main.h"
+#include "arm_math.h"
+
+#include "arm_math.h"
+
+// Define initial state of X_pk and P_pk
+float X_k[4] = {0.0f, 0.0f, 0.0f, 0.0f};
+float P_k[16] = {0.0f, 0.0f, 0.0f, 0.0f,
+                      0.0f, 0.0f, 0.0f, 0.0f,
+                      0.0f, 0.0f, 0.0f, 0.0f,
+                      0.0f, 0.0f, 0.0f, 0.0f};
+// System matrices
+float A[16] = {1.0f, 0.0091f, -0.0516f, 0.0047f,
+                   0.0f, 0.7765f, -9.8835f, 0.06533f,
+                   0.0f, 0.0f   ,   1.0f  , 0.0f,
+                   0.0f,-0.1651f, 1.2950f, 0.0045f};
+
+float A_transpose[16] = {1.0f,    0.0f,    0.0f,   0.0f,
+	  	  	  	  	  	  	 0.0091f, 0.7765f, 0.0f, -0.1651f,
+	  	  	  	  	  	  	-0.0516f,-9.8835f, 1.0f,  1.2950f,
+	  	  	  	  	  	  	 0.0047f, 0.06533f,0.0f,  0.0045f};
+
+float eye[16] = {1.0f, 0.0f, 0.0f, 0.0f,
+		  	  	  	 0.0f, 1.0f, 0.0f, 0.0f,
+					 0.0f, 0.0f, 1.0f, 0.0f,
+					 0.0f, 0.0f, 0.0f, 1.0f,};
+
+float B[4] = {0.0f, 0.0f, 0.0f, 1.0f};
+
+float C[4] = {0.0f, 1.0f, 0.0f, 0.0f};
+
+float C_transpose[4] = {0.0f,
+	  	  	  	  	  	  	1.0f,
+	  	  	  	  	  	  	0.0f,
+  						    0.0f};
+
+float G[4] = {0.0f, 1.0f, 0.0f, 0.0f};
+
+float G_transpose[4] = {0.0f,
+	  	  	  	  	  	  	1.0f,
+	  	  	  	  	  	  	0.0f,
+	  	  	  	  	  	  	0.0f};
+
+float Es_velocity[1] = {0.0f};
+arm_matrix_instance_f32 X_k_matrix = {4, 1, X_k};
+
+#endif /* INC_KALMAN_H_ */

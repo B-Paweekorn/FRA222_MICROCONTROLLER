@@ -466,6 +466,7 @@ void setMotor(int PWM){
 		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,PWM);
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 0);
 	}
+
 	else if (PWM < 0){
 		__HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,abs(PWM));
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_4, 1);

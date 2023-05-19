@@ -1,0 +1,75 @@
+/*
+ * kalman.h
+ *
+ *  Created on: May 16, 2023
+ *      Author: pawee
+ */
+
+#ifndef INC_KALMAN_H_
+#define INC_KALMAN_H_
+
+#include "main.h"
+#include "arm_math.h"
+
+#include "arm_math.h"
+
+// Define initial state of X_pk and P_pk
+float32_t X_k[4] = {0.0f, 0.0f, 0.0f, 0.0f};
+arm_matrix_instance_f32 X_k_matrix;
+
+float32_t P_k[16] = {0.0f, 0.0f, 0.0f, 0.0f,
+                 0.0f, 0.0f, 0.0f, 0.0f,
+                 0.0f, 0.0f, 0.0f, 0.0f,
+                 0.0f, 0.0f, 0.0f, 0.0f};
+arm_matrix_instance_f32 P_k_matrix;
+
+// System matrices
+float32_t A[16] = {1.0f, 0.0091f, -0.0516f, 0.0047f,
+               0.0f, 0.7765f, -9.8835f, 0.06533f,
+               0.0f, 0.0f   ,   1.0f  , 0.0f,
+               0.0f,-0.1651f, 1.2950f, 0.0045f};
+arm_matrix_instance_f32 A_matrix;
+
+float32_t A_transpose[16] = {1.0f,    0.0f,    0.0f,   0.0f,
+	  	  	  	  	  	 0.0091f, 0.7765f, 0.0f, -0.1651f,
+	  	  	  	  	  	-0.0516f,-9.8835f, 1.0f,  1.2950f,
+	  	  	  	  	  	 0.0047f, 0.06533f,0.0f,  0.0045f};
+arm_matrix_instance_f32 A_transpose_matrix;
+
+float32_t eye[16] = {1.0f, 0.0f, 0.0f, 0.0f,
+		  	  	 0.0f, 1.0f, 0.0f, 0.0f,
+				 0.0f, 0.0f, 1.0f, 0.0f,
+				 0.0f, 0.0f, 0.0f, 1.0f,};
+arm_matrix_instance_f32 eye_matrix;
+
+float32_t B[4] = {0.0f, 0.0f, 0.0f, 1.0f};
+arm_matrix_instance_f32 B_matrix;
+
+float32_t C[4] = {0.0f, 1.0f, 0.0f, 0.0f};
+arm_matrix_instance_f32 C_matrix;
+
+float32_t C_transpose[4] = {0.0f,
+	  	  	  	  	  	1.0f,
+	  	  	  	  	  	0.0f,
+  						0.0f};
+arm_matrix_instance_f32 C_transpose_matrix;
+
+float32_t G[4] = {0.0f, 1.0f, 0.0f, 0.0f};
+arm_matrix_instance_f32 G_matrix;
+
+float32_t G_transpose[4] = {0.0f,
+	  	  	  	  	  		1.0f,
+							0.0f,
+							0.0f};
+arm_matrix_instance_f32 G_transpose_matrix;
+
+float32_t Es_velocity[1] = {0.0f};
+arm_matrix_instance_f32 Output_matrix;
+
+//init all matrix
+arm_mat_init_f32(&X_k_matrix, 1, 4,X_k);
+
+
+
+
+#endif /* INC_KALMAN_H_ */

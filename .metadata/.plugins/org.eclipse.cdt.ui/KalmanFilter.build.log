@@ -1,0 +1,28 @@
+22:02:31 **** Incremental Build of configuration Debug for project KalmanFilter ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DARM_MATH_MATRIX_CHECK -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Include -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core/Include/ -I../Middlewares/Third_Party/ARM_CMSIS/CMSIS/Core_A/Include/ -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Inc/stm32f4xx_hal_conf.h:402,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.c:20:
+../Core/Src/main.c: In function 'setMotor':
+../Core/Src/main.c:436:46: warning: implicit declaration of function 'abs' [-Wimplicit-function-declaration]
+  436 |   __HAL_TIM_SET_COMPARE(&htim1,TIM_CHANNEL_1,abs(PWM));
+      |                                              ^~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h:1396:72: note: in definition of macro '__HAL_TIM_SET_COMPARE'
+ 1396 |   (((__CHANNEL__) == TIM_CHANNEL_1) ? ((__HANDLE__)->Instance->CCR1 = (__COMPARE__)) :\
+      |                                                                        ^~~~~~~~~~~
+arm-none-eabi-gcc -o "KalmanFilter.elf" @"objects.list"  -l:libarm_cortexM4lf_math.a -mcpu=cortex-m4 -T"C:\FRA222_MICROCONTROLLER\KalmanFilter\STM32F411RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="KalmanFilter.map" -Wl,--gc-sections -static -L../Middlewares/Third_Party/ARM_CMSIS/CMSIS/DSP/Lib/GCC --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: KalmanFilter.elf
+ 
+arm-none-eabi-size   KalmanFilter.elf 
+arm-none-eabi-objdump -h -S  KalmanFilter.elf  > "KalmanFilter.list"
+   text	   data	    bss	    dec	    hex	filename
+  42556	    768	   2512	  45836	   b30c	KalmanFilter.elf
+Finished building: default.size.stdout
+ 
+Finished building: KalmanFilter.list
+ 
+
+22:02:32 Build Finished. 0 errors, 1 warnings. (took 943ms)
+
