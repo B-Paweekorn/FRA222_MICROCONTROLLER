@@ -1,0 +1,18 @@
+/*
+ * trajectory.h
+ *
+ *  Created on: 19 May 2023
+ *      Author: pawee
+ */
+
+#ifndef INC_TRAJECTORY_H_
+#define INC_TRAJECTORY_H_
+
+
+#include "main.h"
+
+void Trajectory_Generator(int initial_p,int target_p,float vmax,float amax,float jmax);
+void Trajectory_Evaluated(float vmax,float amax,float jmax);
+void Trajectory_Algolithms();
+
+#endif /* INC_TRAJECTORY_H_ */

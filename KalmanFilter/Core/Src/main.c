@@ -446,7 +446,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		 L_QEIReadRaw = QEIReadRaw;
 		 QEIAd = (QEIReadRaw*2.0*M_PI/280.0);
 		 RawSpeed = (QEIAd - L_QEIAd)*5000.0;
-//		 PWM = 100 * sin(HAL_GetTick()/1000.0);
+		 PWM = 100 * sin(HAL_GetTick()/1000.0);
 		 setMotor(PWM);
 		 Voltage = 12.0*PWM/100.0;
 		 kalman = SteadyStateKalmanFilter(Voltage ,QEIAd);

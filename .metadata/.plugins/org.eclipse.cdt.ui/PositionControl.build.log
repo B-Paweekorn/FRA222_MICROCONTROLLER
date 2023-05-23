@@ -1,10 +1,32 @@
-23:06:39 **** Incremental Build of configuration Debug for project PositionControl ****
+16:36:49 **** Incremental Build of configuration Debug for project PositionControl ****
 make -j16 all 
-arm-none-eabi-size   PositionControl.elf 
-   text	   data	    bss	    dec	    hex	filename
-  26572	    128	   2024	  28724	   7034	PositionControl.elf
-Finished building: default.size.stdout
- 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F411xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Controller':
+../Core/Src/main.c:478:10: error: 'evaluated' undeclared (first use in this function)
+  478 |  error = evaluated.setposition - QEIposition;
+      |          ^~~~~~~~~
+../Core/Src/main.c:478:10: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:500:14: error: 'evaluated' undeclared (first use in this function)
+  500 |    float s = evaluated.setposition;
+      |              ^~~~~~~~~
+../Core/Src/main.c: In function 'Trajectory_Algolithms':
+../Core/Src/main.c:513:11: error: 'evaluated' undeclared (first use in this function)
+  513 |   start = evaluated.setposition;
+      |           ^~~~~~~~~
+../Core/Src/main.c:516:10: error: 'time_total' undeclared (first use in this function); did you mean 'timeval'?
+  516 |  if(t <= time_total){
+      |          ^~~~~~~~~~
+      |          timeval
+../Core/Src/main.c:517:3: error: invalid use of undefined type 'struct ScurveEvaluated'
+  517 |   Trajectory_Evaluated(600,1000,2500); //600,1000,2500
+      |   ^~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c:520:7: error: 'setposition' undeclared (first use in this function); did you mean 'QEIposition'?
+  520 |  if ((setposition - QEIposition <= 0.5) && (setposition - QEIposition >= -0.5) && (t >= time_total)){
+      |       ^~~~~~~~~~~
+      |       QEIposition
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
 
-23:06:39 Build Finished. 0 errors, 0 warnings. (took 223ms)
+16:36:49 Build Failed. 7 errors, 0 warnings. (took 368ms)
 

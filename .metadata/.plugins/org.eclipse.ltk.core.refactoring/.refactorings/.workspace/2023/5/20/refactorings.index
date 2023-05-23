@@ -1,1 +1,3 @@
 1684313720591	Delete resource 'KalmanFilter/Core/Src/kalman'
+1684582834317	Delete resource 'PositionControl/Core/Src/trajectory.c'
+1684582842800	Delete resource 'PositionControl/Core/Inc/trajectory.h'

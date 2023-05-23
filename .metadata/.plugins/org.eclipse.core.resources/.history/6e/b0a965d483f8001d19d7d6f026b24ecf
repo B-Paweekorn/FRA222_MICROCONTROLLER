@@ -1,0 +1,210 @@
+/*
+ * scurve.c
+ *
+ *  Created on: 22 May 2023
+ *      Author: pawee
+ */
+#include "scurve.h"
+//Trajectory
+struct ScurveEvaluated {
+    double setposition;
+    double setvelocity;
+    double setacceleration;
+};
+
+struct ScurveEvaluated evaluated = {
+    .setposition = 0.0,
+    .setvelocity = 0.0,
+    .setacceleration = 0.0
+};
+
+int initial_p = 0;
+int target_p = 0;
+double time_total;
+double t,tj,ta,tv,t1,t2,t3,t4,t5,t6,t7 = 0;
+int8_t dir = 0;
+
+float Trajectory_Generator(int initial_p,int target_p,float vmax,float amax,float jmax){
+	//Set parameter
+	uint32_t s = 0;
+	uint8_t M = 0;
+	uint8_t N = 0;
+	uint8_t pattern = 0;
+	float va = 0.0f;
+	float sa = 0.0f;
+	float sv = 0.0f;
+	// Check for the feasibility of the trajectory
+	if(vmax*jmax < amax*amax){
+		M = 1;
+		N = 0;
+	}
+	else{
+		M = 0;
+		N = 1;
+	}
+
+    // Determine the direction of the motion
+    if (target_p - initial_p < 0){
+        dir = -1;
+    }
+    else{
+        dir = 1;
+    }
+
+    // Calculate the required distance
+    s = abs(target_p - initial_p);
+
+    // Calculate the values of va, sa and sv
+    va = (amax*amax)/jmax;
+    sa = 2*(amax*amax*amax)/(jmax*jmax);
+    sv = vmax*((M * 2 * sqrt(vmax/jmax)) + N*((vmax/amax)+(amax/jmax)));
+
+    // Determine the shape of the trajectory based on the values of va, sa and sv
+    if ((vmax <= va) && (s >= sa)){
+        pattern = 1;
+    }
+    else if ((vmax > va) && (s < sa)){
+        pattern = 2;
+    }
+    else if ((vmax < va) && (s < sa) && (s > sv)){
+        pattern = 3;
+    }
+    else if ((vmax < va) && (s < sa) && (s < sv)){
+        pattern = 4;
+    }
+    else if ((vmax >= va) && (s >= sa) && (s >= sv)){
+        pattern = 5;
+    }
+    else if ((vmax >= va) && (s >= sa) && (s < sv)){
+        pattern = 6;
+    }
+
+    // Calculate the values of tj, ta and tv for each trajectory pattern
+    switch (pattern){
+        case 1:
+            tj = (float)pow((vmax/jmax),(0.5));
+            ta = tj;
+            tv = s/vmax;
+            break;
+        case 2:
+            tj = (float)pow(s/(2.0*jmax),1.0/3.0);
+            ta = tj;
+            tv = 2*tj;
+            break;
+        case 3:
+            tj = (float)pow((s/(2*jmax)),(1.0/3.0));
+            ta = tj;
+            tv = 2*tj;
+            break;
+        case 4:
+            tj = (float)pow((s/(2*jmax)),(1.0/3.0));
+            ta = tj;
+            tv = 2*tj;
+            break;
+        case 5:
+            tj = amax/jmax;
+            ta = vmax/amax;
+            tv = s/vmax;
+            break;
+        case 6:
+            tj = amax/jmax;
+            ta = 0.5*(sqrt(((4*s*jmax*jmax)+(amax*amax*amax)) / (amax * jmax*jmax)) - (amax/jmax));
+            tv = ta + tj;
+            break;
+    }
+
+    // Calculate the values of t1 to t7 and the total time
+    t1 = tj;
+    t2 = ta;
+    t3 = ta + tj;
+    t4 = tv;
+    t5 = tv + tj;
+    t6 = tv + ta;
+    t7 = tv + tj + ta;
+    time_total = t7;
+    if (s == 0){
+    	time_total = 0;
+    }
+    return time_total;
+}
+
+struct ScurveEvaluated Trajectory_Evaluated(float vmax,float amax,float jmax){
+	static double p1,p2,p3,p4,p5,p6 = 0;
+	static double v1,v2,v3,v4,v5,v6 = 0;
+	static double a1,a2,a3,a4,a5,a6 = 0;
+	t += 1.0/2000.0;
+	if (t <= time_total){
+		if(t <= t1){
+			evaluated.setposition = initial_p + 1/6.0 * jmax * pow(t,3.0) * dir;
+			evaluated.setvelocity =  1/2.0 * jmax * t * t * dir;
+			evaluated.setacceleration = jmax *t* dir;
+			p2 = setposition;
+			p1 = p2;
+			v2 = setvelocity;
+			v1 = v2;
+			a2 = setacceleration;
+			a1 = a2;
+		}
+		else if (t1 < t && t <= t2){
+			evaluated.setposition =  p1 + v1 * (t - t1) + 1/2.0 * a1 * pow((t - t1),2.0);
+			evaluated.setvelocity = v1 + a1*(t-t1);
+			evaluated.setacceleration = a1;
+			p3 = setposition;
+			p2 = p3;
+			v3 = setvelocity;
+			v2 = v3;
+			a3 = setacceleration;
+			a2 = a3;
+		}
+		else if (t2 <= t && t <= t3){
+			evaluated.setposition = p2 + v2 * (t - t2) + 1/2.0 * a2 * pow((t - t2),2.0) + 1.0/6.0 * - jmax * dir * pow((t - t2),3.0);
+			evaluated.setvelocity = v2 + a2 * (t - t2) + 1/2.0 * -jmax * dir * pow((t - t2),2.0);
+			evaluated.setacceleration = a2 - (jmax * (t - t2))*dir;
+			p6 = setposition;
+			p4 = p6;
+			p3 = p4;
+			v6 = setvelocity;
+			v4 = v6;
+			v3 = v4;
+			a6 = setacceleration;
+			a4 = a6;
+			a3 = a4;
+		}
+		else if (t3 < t && t < t4){
+			evaluated.setposition = p3 + v3 * (t - t3);
+			evaluated.setvelocity = v3;
+			evaluated.setacceleration = 0;
+			p5 = setposition;
+			p4 = p5;
+			v5 = setvelocity;
+			v4 = v5;
+			a5 = setacceleration;
+			a4 = a5;
+		}
+		else if (t4 <= t && t <= t5){
+			evaluated.setposition = p4 + v4 * (t - t4) + (1.0/6.0) * dir *- jmax * pow((t - t4),3.0);
+			evaluated.setvelocity = v4 + 1.0/2.0 * - jmax * dir * pow((t - t4),2.0);
+			evaluated.setacceleration = (-jmax * (t - t4))*dir;
+			p6 = setposition;
+			p5 = p6;
+			v6 = setvelocity;
+			v5 = v6;
+			a6 = setacceleration;
+			a5 = a6;
+		}
+		else if (t5 < t && t <= t6){
+			evaluated.setposition = p5 + v5 * (t - t5) + 1/2.0 * a5 * pow((t - t5),2.0);
+			evaluated.setvelocity = v5 + a5 * (t - t5);
+			evaluated.setacceleration = a5;
+			p6 = setposition;
+			v6 = setvelocity;
+			a6 = setacceleration;
+		}
+		else if (t6 < t && t <= t7){
+			evaluated.setposition = p6 + v6 * (t - t6) + 1.0/2.0 * a6 * pow((t - t6),2) + 1/6.0 * jmax* dir * pow((t - t6),3);
+			evaluated.setvelocity = v6 + a6 * (t - t6) + 1.0/2.0 * jmax*dir * pow((t - t6),2);
+			evaluated.setacceleration = a6 + dir *jmax * (t - t6);
+		}
+	}
+	return evaluated;
+}

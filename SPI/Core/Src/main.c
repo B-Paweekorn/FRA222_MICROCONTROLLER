@@ -46,6 +46,13 @@ UART_HandleTypeDef huart2;
 /* USER CODE BEGIN PV */
 uint8_t SPIRx[10];
 uint8_t SPITx[10];
+uint8_t TxLed[10];
+uint32_t Mode = 0;
+uint32_t L_Mode = 999;
+uint8_t flag = 1;
+uint64_t count = 0;
+uint32_t list[8] = {0b11111110,0b11111101,0b11111011,0b11110111,0b11101111,0b11011111,0b10111111,0b01111111};
+uint32_t list2[2] = {0b10101010,0b01010101};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -54,7 +61,9 @@ static void MX_GPIO_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_SPI3_Init(void);
 /* USER CODE BEGIN PFP */
-
+void SPITxRx_Setup();
+void SPITxRx_readIO();
+void SPITxRx_writeIO();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -94,13 +103,31 @@ int main(void)
   MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
 SPITxRx_Setup();
+
+HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 0);
+TxLed[0] = 0b01000000;
+TxLed[1] = 0x01;
+TxLed[2] = 0b00000000;
+HAL_SPI_Transmit_IT(&hspi3, TxLed, 3);
+
+HAL_Delay(20);
+if(HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_2)){
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 0);
+	TxLed[0] = 0b01000000;
+	TxLed[1] = 0x15;
+	TxLed[2] = 0b11111111;
+	HAL_SPI_Transmit_IT(&hspi3, TxLed, 3);
+}
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+
 	  SPITxRx_readIO();
+	  SPITxRx_writeIO();
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -174,8 +201,8 @@ static void MX_SPI3_Init(void)
   hspi3.Init.Mode = SPI_MODE_MASTER;
   hspi3.Init.Direction = SPI_DIRECTION_2LINES;
   hspi3.Init.DataSize = SPI_DATASIZE_8BIT;
-  hspi3.Init.CLKPolarity = SPI_POLARITY_HIGH;
-  hspi3.Init.CLKPhase = SPI_PHASE_2EDGE;
+  hspi3.Init.CLKPolarity = SPI_POLARITY_LOW;
+  hspi3.Init.CLKPhase = SPI_PHASE_1EDGE;
   hspi3.Init.NSS = SPI_NSS_SOFT;
   hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_64;
   hspi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
@@ -279,16 +306,51 @@ void SPITxRx_Setup(){
 }
 
 void SPITxRx_readIO(){
+	HAL_Delay(1);
 	if(HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_2)){
 		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 0);
 		SPITx[0] = 0b01000001;
 		SPITx[1] = 0x12;
 		SPITx[2] = 0;
 		SPITx[3] = 0;
-		HAL_SPI_TransmitReceive_IT(&hspi3, SPIRx, SPIRx, 4);
+		HAL_SPI_TransmitReceive_IT(&hspi3, SPITx, SPIRx, 4);
+		if(SPIRx[2] != 255 && SPIRx[2] != 0 && Mode != SPIRx[2]){
+			Mode = SPIRx[2];
+		}
 	}
 }
 
+void SPITxRx_writeIO(){
+	HAL_Delay(1);
+	if(HAL_GPIO_ReadPin(GPIOD, GPIO_PIN_2)){
+		count += 1;
+		if(Mode == 0b11111110){
+			HAL_Delay(1000);
+			HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 0);
+			TxLed[0] = 0b01000000;
+			TxLed[1] = 0x15;
+			TxLed[2] = list[count%8];
+			HAL_SPI_Transmit_IT(&hspi3, TxLed, 3);
+		}
+	else if(Mode == 0b11111101){
+		HAL_Delay(1000);
+		HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 0);
+		TxLed[0] = 0b01000000;
+		TxLed[1] = 0x15;
+		TxLed[2] = list2[count%2];
+		HAL_SPI_Transmit_IT(&hspi3, TxLed, 3);
+	}
+	}
+//	else if(Mode == 0b11111011){
+//
+//	}
+//	else if(Mode == 0b11110111){
+//
+//	}
+}
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi){
+	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 1);
+}
 void HAL_SPI_TxRxCpltCallback(SPI_HandleTypeDef *hspi){
 	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_2, 1);
 }

@@ -1,0 +1,34 @@
+/*
+ * scurve.h
+ *
+ *  Created on: 22 May 2023
+ *      Author: pawee
+ */
+
+#ifndef INC_SCURVE_H_
+#define INC_SCURVE_H_
+
+#include "main.h"
+#include "math.h"
+
+void Trajectory_Generator(int initial_p,int target_p,float vmax,float amax,float jmax);
+void Trajectory_Evaluated(float vmax,float amax,float jmax);
+
+//Trajectory
+volatile double setposition;
+volatile double setvelocity;
+volatile double setacceleration;
+
+int initial_p = 0;
+int target_p = 0;
+int Ltarget_p = 0;
+int Target_set;
+
+double time_total;
+double t,tj,ta,tv,t1,t2,t3,t4,t5,t6,t7 = 0;
+int dataset[20] = {700,0,350,700,0,360,340,360,340,360,340,360,340,345,350,345,350,345,350,345};
+
+uint64_t i;
+int8_t dir = 0;
+
+#endif /* INC_SCURVE_H_ */
